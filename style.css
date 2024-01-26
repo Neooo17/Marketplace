@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box; 
+    scroll-behavior: smooth;
 }
+
 body{
     font-family: Raleway, sans-serif;
     color: #212529;
@@ -523,6 +525,30 @@ footer{
 .no-scroll {
     overflow: hidden;
 }
+
+/* movetop styling */
+#movetop {
+    position: fixed;
+    bottom: 90px;
+    right: 15px;
+    z-index: 9;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #060606;
+    width: 40px;
+    height: 40px;
+    background: #ffc2b4;
+    border-radius: 50%;
+    display: none;
+}
+  
+#movetop:hover {
+    opacity: .8;
+}
+  
+  /* //movetop styling */
 
 
 

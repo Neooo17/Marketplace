@@ -40,3 +40,48 @@ window.addEventListener('scroll', function() {
         navbar.classList.remove('scrolled');
     }
 });
+
+
+
+// // When the user scrolls down 20px from the top of the document, show the button
+
+// const moveTopButton = document.getElementById("movetop");
+
+// window.onscroll = function () {
+//     scrollFunction()
+// };
+
+// function scrollFunction() {
+//     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+//         moveTopButton.style.display = "block";
+//     } else {
+//         moveTopButton.style.display = "none";
+//     }
+// }
+
+// // When the user clicks on the button, scroll to the top of the document
+
+// moveTopButton.addEventListener("click", () => {
+//     document.body.scrollTop = 0; // For Safari
+//     document.documentElement.scrollTop = 0; // For Chrome, Firefox, Opera
+// })
+
+
+
+// other way to go to top when click on movetop button with smooth animation with some little CSS
+
+var moveTopButton = document.getElementById("movetop");
+
+window.onscroll = function() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        moveTopButton.style.display = "block";
+    } else {
+        moveTopButton.style.display = "none";
+    }
+};
+
+moveTopButton.addEventListener('click', function() {
+     window.scrollTo({top: 0, behavior: 'smooth'});
+});
+
+
