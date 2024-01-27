@@ -803,20 +803,19 @@ footer{
 .contact{
     padding-top: 6rem;
     display: flex;
-    justify-content: space-between;
+    gap: 1.5rem;
+    flex-wrap: wrap;
 }
 .contact-info{
-    flex-basis: 33%;
+    flex-basis: 31%;
     display: flex;
-    gap: 1rem;
-    justify-content: center;
+    gap: 1.5rem;
 }
 .contact-info h3{
     margin-bottom: 1rem;
 }
 .contact-info p{
     margin: 0;
-    
 }
 .contact-info p a{
     text-decoration: none;
@@ -862,6 +861,29 @@ footer{
 .submit{
     text-align: right;
     margin-top: -2rem;
+}
+
+
+@media (max-width:980px){
+    .contact-info{
+        flex-basis: 45%;
+    }
+    .map{
+        flex-direction: column-reverse;
+        width: 70%;
+    }
+}
+
+@media (max-width:735px){
+    .contact{
+        flex-direction: column;
+    }
+    .map{
+        width: 90%;
+    }
+    .map iframe{
+        height: 300px;
+    }
 }
 
 /* // Contact Page Style */
