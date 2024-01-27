@@ -75,7 +75,7 @@ nav a:hover{
 .search-box button:hover{
     color: #FFC2B4;
 }
-::placeholder{
+.search-box ::placeholder{
     color: #fff;
     opacity: 0.6;
 }
@@ -761,7 +761,109 @@ footer{
     }
 }
 
+/* // Home page */
 
 
+
+
+
+/* Contact Page Style */
+
+.banner2{
+    padding: 15rem 4rem 6.2rem 4rem;
+    background: url(assets/images/banner.png) no-repeat center;
+    background-size: cover;
+    width: 100%;
+}
+.banner2 h4{
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    margin-bottom: 0.7rem;
+}
+.banner2 li{
+    list-style: none;
+    display: inline-block;
+    font-size: 0.9rem;
+    margin-right: 0.5rem;
+}
+.banner2 li a {
+    text-decoration: none;
+    color: #060606;
+    font-weight: 700;
+}
+.banner2 li i{
+    margin-right: 0.5rem;
+    font-size: 0.9rem;
+}
+.banner2 li a:hover{
+    color: #B3375B;
+    transition: .5s all;
+}
+
+.contact{
+    padding-top: 6rem;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-info{
+    flex-basis: 33%;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+.contact-info h3{
+    margin-bottom: 1rem;
+}
+.contact-info p{
+    margin: 0;
+    
+}
+.contact-info p a{
+    text-decoration: none;
+    color: #060606;
+}
+
+.map{
+    padding-top: 6rem;
+    display: flex;
+    gap: 2rem;
+}
+.map > div {
+    flex: 1; /* This will make each child of .map take equal space */
+}
+.map iframe{
+    width: 100%;
+    height: 350px;
+    border-radius: 30px;
+}
+.form-data input, .form-data textarea {
+    font-family: Raleway, sans-serif;
+    padding: 14px 20px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    line-height: 20px;
+    color: #060606;
+    background: #fafafa;
+    border: 2px solid #eee;
+    border-radius: 30px;
+    width: 100%;
+}
+.form-data textarea{
+    height: 150px;
+    resize: none;
+}
+.form-data input:focus, .form-data input:focus{
+    outline: 2px solid #B3375B;
+}
+.form-data ::placeholder{
+    opacity: 0.8;
+    font-size: 1rem;
+}
+.submit{
+    text-align: right;
+    margin-top: -2rem;
+}
+
+/* // Contact Page Style */
 
 
