@@ -27,7 +27,6 @@ links.forEach((link) => {
 })
 
 
-
 // Adding bg-color and box-shadow to nav bar when Scrolled 
 
 window.addEventListener('scroll', function() {
