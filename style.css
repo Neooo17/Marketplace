@@ -849,7 +849,7 @@ a.read:hover{
     height: 150px;
     resize: none;
 }
-.form-data input:focus, .form-data input:focus{
+.form-data input:focus, .form-data textarea:focus{
     outline: 2px solid #B3375B;
 }
 .form-data ::placeholder{
