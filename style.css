@@ -896,6 +896,8 @@ a.read:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
     background: url(assets/images/bg1.jpg) no-repeat center fixed;
     background-size: cover;
     position: relative;
@@ -944,13 +946,17 @@ a.read:hover{
     font-weight: 700;
 }
 .roww-text p{
-    max-width: 60%;
+    max-width: 70%;
     margin: auto;
     margin-top: 0.6rem;
 }
 .team-about{
     display: flex;
     gap: 1.5rem;
+    flex-wrap: wrap;
+}
+.team-img{
+    flex: 1;
 }
 .team-img img{
     width: 100%;
@@ -1011,6 +1017,7 @@ a.read:hover{
     display: flex;
     gap: 3rem;
     text-align: left; 
+    align-items: center;
 }
 .review-slide img{
     width: 200px;
@@ -1054,4 +1061,43 @@ a.read:hover{
 
 .f-about{
     margin-top: 0;
+}
+
+
+@media (max-width:910px) {
+    .stats{
+        padding: 8rem 3rem;
+    }
+}
+
+@media (max-width:780px) {
+    .roww-text p{
+        max-width: 90%;
+    }
+    .review{
+        padding: 4rem 2rem;
+    }
+}
+
+@media (max-width:750px) {
+    .counter{
+        flex: 0 0 40%;
+    }
+    .team-img{
+        flex: 0 0 40%;
+        
+    }
+    .team-about{
+        gap: 3rem;
+        padding:0 2rem;
+    }
+}
+
+@media (max-width:620px) {
+    .team-about{
+        padding: 0;
+    }
+    .review-slide{
+        flex-direction: column;
+    }
 }
