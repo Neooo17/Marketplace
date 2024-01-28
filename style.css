@@ -1048,6 +1048,10 @@ a.read:hover{
     background: #990033;
 }
 
+.message-m2, .message-m3{
+    display: none;
+}
+
 .f-about{
     margin-top: 0;
 }
