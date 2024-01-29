@@ -992,7 +992,7 @@ a.read:hover{
 }
 /* .socials {
     position: relative;
-    bottom: 80px;
+    bottom: 80px;  
 } */
 .socials {
     position: absolute;
@@ -1090,6 +1090,9 @@ a.read:hover{
     .team-about{
         gap: 3rem;
         padding:0 2rem;
+    }
+    .socials{
+        width: 40%;
     }
 }
 
