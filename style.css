@@ -912,7 +912,7 @@ a.read:hover{
     right: 0px;
     z-index: -1;
     background: rgb(0 0 0 / 58%);
-  }
+}
 .counter{
     display: flex;
     flex-direction: column;
@@ -1100,4 +1100,97 @@ a.read:hover{
     .review-slide{
         flex-direction: column;
     }
+}
+
+/* //About Page Style */
+
+
+/* Services Page Style */
+
+.stats-s{
+    margin-top: 7rem;
+    width: 100%;
+    padding: 8rem;
+    background: url(assets/images/bg1.jpg) no-repeat center fixed;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+}
+.stats-s::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: -1;
+    background: rgb(0 0 0 / 58%);
+}
+.stats-s h2{
+    font-size: 2.8rem;
+    width: 70%;
+    text-align: center;
+}
+
+.faqs{
+    margin-top: 7rem;
+    display: flex;
+    gap: 3rem;
+}
+.faq h3{
+    font-size: 2rem;
+}
+.faq p{
+    margin-bottom: 3rem;
+}
+.faq-page h2{
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+.faq-page h2 i{
+    font-size: 1rem;
+}
+.faq-page p{
+    margin-bottom: 1.5rem;
+    display: none;
+}
+.faq-page{
+    border-bottom: 1.5px solid #EEEEEE;
+}
+.faq-page:last-child{
+    border-bottom: none;
+}
+
+.faqs .form{
+    background: #FFC2B4;
+    border-radius: 30px;
+    padding: 2.5rem;
+    max-width: 400px;
+}
+.faqs .form h3{
+    font-size: 2rem;
+}
+.faqs .form p{
+    margin-bottom: 1.5rem;
+}
+.faqs .form input{
+    font-size: 1rem;
+    padding: 12px 20px;
+    color: #363636;
+    margin-bottom: 1.2rem;
+    border: none;
+    border-radius: 30px;
+    width: 100%;
+}
+.faqs .form input:focus{
+    outline: none;
+}
+.btn-s{
+    width: 100%;
+    margin-top: 0;
 }
