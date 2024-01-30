@@ -15,3 +15,18 @@ headers.forEach(heading => {
 });
 
 
+//Other way to doing this with a smooth animation
+
+// const headers = document.querySelectorAll(".faq-page h2");
+
+// headers.forEach(heading => {
+//     heading.addEventListener("click", () => {
+//         const content = heading.nextElementSibling;
+
+//         // Toggle a class that controls the appearance
+//         content.classList.toggle('active');
+//     });
+// });
+
+
+

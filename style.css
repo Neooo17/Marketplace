@@ -1141,7 +1141,7 @@ a.read:hover{
     gap: 3rem;
 }
 .faq h3{
-    font-size: 2rem;
+    font-size: 2.1rem;
 }
 .faq p{
     margin-bottom: 3rem;
@@ -1161,7 +1161,14 @@ a.read:hover{
 .faq-page p{
     margin-bottom: 1.5rem;
     display: none;
+    /* overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease-out; */
 }
+/* .faq-page p.active {
+    
+    max-height: 200px;
+} */
 .faq-page{
     border-bottom: 1.5px solid #EEEEEE;
 }
