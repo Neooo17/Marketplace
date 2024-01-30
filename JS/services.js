@@ -6,10 +6,10 @@ headers.forEach(heading => {
         const content = heading.nextElementSibling;
 
         // Toggle the display of the specific p element
-        if (content.style.display === "block") {
-            content.style.display = "none";
+        if (content.style.display === "none") {
+            content.style.display = "block";
         } else {
-            content.style.display = "block";  
+            content.style.display = "none";  
         }
     });
 });
