@@ -1,7 +1,7 @@
 // Counter
 
 const counters = document.querySelectorAll(".counter h2");
-const duration = 4000; // Duration in milliseconds
+const duration = 8000; // Duration in milliseconds
 
 counters.forEach((counter) => {
   const updateCount = () => {
