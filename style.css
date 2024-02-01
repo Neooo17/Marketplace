@@ -82,6 +82,10 @@ nav a:hover{
 .mobile-nav-toggle{
     display: none;
 }
+.active {
+    color: #B3375B;
+}
+
 
 /* For All Container */
 

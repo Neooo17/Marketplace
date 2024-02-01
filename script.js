@@ -27,7 +27,7 @@ links.forEach((link) => {
 })
 
 
-// Adding bg-color and box-shadow to nav bar when Scrolled 
+//** Adding bg-color and box-shadow to nav bar when Scrolled....
 
 window.addEventListener('scroll', function() {
     var navbar = document.querySelector('nav');
@@ -40,9 +40,34 @@ window.addEventListener('scroll', function() {
     }
 });
 
+//** Adding bg-color & box-shadow to nav bar when scrolled */
 
 
-// // When the user scrolls down 20px from the top of the document, show the button
+
+
+
+
+
+//** When the user scrolls down 20px from the top of the document, show the moveTop button
+// * and go to top of the page when clicked moverTop btn with animation using lil CSS
+
+var moveTopButton = document.getElementById("movetop");
+
+window.onscroll = function() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        moveTopButton.style.display = "block";
+    } else {
+        moveTopButton.style.display = "none";
+    }
+};
+
+moveTopButton.addEventListener('click', function() {
+     window.scrollTo({top: 0, behavior: 'smooth'});
+});
+
+
+
+//** other way to go to top when click on movetop button without smooth animation
 
 // const moveTopButton = document.getElementById("movetop");
 
@@ -66,21 +91,4 @@ window.addEventListener('scroll', function() {
 // })
 
 
-
-// other way to go to top when click on movetop button with smooth animation with some little CSS
-
-var moveTopButton = document.getElementById("movetop");
-
-window.onscroll = function() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        moveTopButton.style.display = "block";
-    } else {
-        moveTopButton.style.display = "none";
-    }
-};
-
-moveTopButton.addEventListener('click', function() {
-     window.scrollTo({top: 0, behavior: 'smooth'});
-});
-
-
+//** go to top when click on movetop button without smooth animation */
