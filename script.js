@@ -44,7 +44,21 @@ window.addEventListener('scroll', function() {
 
 
 
+//** Current page link is highlighted..........
 
+const navItems = document.querySelectorAll('.primary-navigation li a');
+
+// Get the current URL
+const currentUrl = window.location.href;
+
+navItems.forEach(item => {
+    // Check if the item's href matches the current URL
+    if (item.href === currentUrl) {
+        item.classList.add('active');
+    }
+});
+
+//** Current page link is highlighted */
 
 
 
