@@ -939,7 +939,6 @@ a.read:hover{
     flex-direction: column;
     gap: 3rem;
     text-align: center;
-    position: relative;
 }
 .roww h3{
     font-size: 1.9rem;
@@ -953,14 +952,11 @@ a.read:hover{
 .team-about{
     display: flex;
     gap: 1.5rem;
+    justify-content: center;
     flex-wrap: wrap;
 }
 .team-img{
     flex: 1;
-}
-.team-img img{
-    width: 100%;
-    border-radius: 30px;
 }
 .team-img h4{
     font-size: 1.3rem;
@@ -974,8 +970,13 @@ a.read:hover{
     font-weight: 400;
     color: #363636;
 }
-.team-img .socials a{
-    background: #5A73A4;
+
+.team-info img{
+    width: 100%;
+    border-radius: 20px;
+}
+.team-info .socials a{
+    background: #3b5998;
     display: inline-block;
     width: 40px;
     height: 40px;
@@ -990,18 +991,24 @@ a.read:hover{
 .socials a:hover{
     opacity: .8;
 }
-/* .socials {
+
+.team-info{
     position: relative;
-    bottom: 80px;  
-} */
+    z-index: 1;
+    overflow: hidden;
+}
 .socials {
     position: absolute;
-    bottom: 80px;
-    margin: 0;
-    padding: 2em 0;
+    bottom: -80px;
+    padding: 2.5rem 0;
     transition: .5s;
-    width: 25%;
-    display: none;
+    width: 100%;
+    justify-content: center;
+    opacity: 0;
+}
+.team-info:hover .socials{
+    bottom: 0;
+    opacity: 1;
 }
 
 /* Review */
@@ -1084,21 +1091,18 @@ a.read:hover{
         flex: 0 0 40%;
     }
     .team-img{
-        flex: 0 0 40%;
-        
+        flex: 0 0 40%;   
     }
     .team-about{
         gap: 3rem;
         padding:0 2rem;
-    }
-    .socials{
-        width: 40%;
     }
 }
 
 @media (max-width:620px) {
     .team-about{
         padding: 0;
+        gap: 1.5rem;
     }
     .review-slide{
         flex-direction: column;
