@@ -4,12 +4,17 @@ headers.forEach(heading => {
     heading.addEventListener("click", () => {
         // Get the next sibling of the clicked header, which should be the corresponding p element
         const content = heading.nextElementSibling;
+        const icon = heading.querySelector('i'); // Get the <i> tag inside the header
 
         // Toggle the display of the specific p element
         if (content.style.display === "none") {
             content.style.display = "block";
+            icon.classList.remove('fa-chevron-down');
+            icon.classList.add('fa-chevron-up');
         } else {
-            content.style.display = "none";  
+            content.style.display = "none";
+            icon.classList.remove('fa-chevron-up');
+            icon.classList.add('fa-chevron-down');
         }
     });
 });
