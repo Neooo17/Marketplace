@@ -51,7 +51,7 @@ nav a{
     color: #060606;
     font-weight: 600;
 }
-nav a:hover{
+nav ul a:hover{
     color: #B3375B;
 }
 .search-box input{
@@ -739,6 +739,9 @@ a.read:hover{
 }
 
 @media(max-width:570px){
+    nav{
+        padding: 1rem;
+    }
     .info-box{
         left: 50px;
         top: 400px;
