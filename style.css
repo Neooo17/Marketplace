@@ -1354,6 +1354,10 @@ body.dark-mode{
     .map iframe{
         filter: grayscale(100%);
     }
+
+    .active {
+        color: #B3375B;
+    }
 }
 
 /* // Dark theme Toggle & Style */
