@@ -13,7 +13,7 @@ body{
 /* Navigation */
 
 nav{
-    padding:1rem 3rem;
+    padding:1rem 5rem 1rem 3rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -56,7 +56,7 @@ nav ul a:hover{
 }
 .search-box input{
     font-size: 1rem;
-    padding: 15px 35px 15px 14px;
+    padding: 14px 35px 14px 14px;
     border: none;
     border-radius: 30px;
     background: #990033;
@@ -571,10 +571,9 @@ a.read:hover{
 }
 
 @media(max-width:980px) {
-    /* .banner{
-        padding: 10rem 6rem;
-        gap: 4rem;
-    } */
+    nav{
+        padding: 1rem 3rem;
+    }
     .banner-img{
         width: 350px;
         margin-top: 2rem;
@@ -1240,5 +1239,35 @@ a.read:hover{
     }
     .faq-page h2{
         font-size: 1rem;
+    }
+}
+
+/* //Service Page Style  */
+
+
+
+/* Dark Mode Toggle & Style */
+
+.dark-mode-toggle{
+    position: absolute;
+    right: 50px;
+}
+.dark-mode-toggle i{
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+.dark-mode-toggle i:hover{
+    color: #B3375B;
+}
+
+@media(max-width:980px){
+    .dark-mode-toggle{
+        right: 100px;
+    }
+}
+
+@media(max-width:570px){
+    .dark-mode-toggle{
+        right: 70px;
     }
 }
