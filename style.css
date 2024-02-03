@@ -848,6 +848,7 @@ a.read:hover{
     color: #060606;
     background: #fafafa;
     border: 2px solid #eee;
+    outline: none;
     border-radius: 30px;
     width: 100%;
 }
@@ -856,7 +857,7 @@ a.read:hover{
     resize: none;
 }
 .form-data input:focus, .form-data textarea:focus{
-    outline: 2px solid #B3375B;
+    border: 2px solid #B3375B;
 }
 .form-data ::placeholder{
     opacity: 0.8;
@@ -1246,6 +1247,8 @@ a.read:hover{
 
 
 
+
+
 /* Dark Mode Toggle & Style */
 
 .dark-mode-toggle{
@@ -1271,3 +1274,86 @@ a.read:hover{
         right: 70px;
     }
 }
+
+
+/* dark theme style */
+
+body.dark-mode{
+    background: #171717;
+    color: #fdfffc;
+
+    p{
+        color: #b7b7b7;
+    }
+
+    .scrolled {
+        background-color: #171717;
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+        z-index: 10 !important;
+    }
+
+    a{
+        color: #fdfffc;
+    }
+
+    .banner-style{
+        background: #171717;
+        box-shadow: 0 1rem 3rem rgb(0 0 0 / 12%);
+    }
+
+    .about-section h3{
+        color: #fdfffc;
+    }
+
+    .info-box{
+        background: #171717;
+        box-shadow: 0 1rem 3rem rgb(0 0 0 / 12%);
+    }
+    .info-box a{
+        color: #b7b7b7;
+    }
+
+    .box{
+        background: #0c0b0b;
+    }
+
+    .social-footer a{
+        background: #171717;
+    }
+    .social-footer a:hover{
+        background: #FFC2B4;
+        transition: .5s all;
+    }
+
+    .team-img h6{
+        color: #b7b7b7;
+    }
+    .review-slide p, .review-slide h6{
+        color: #fdfffc;
+    }
+
+    .faq-page{
+        border-bottom: 1px solid #404040;
+    }
+    .form p{
+        color: #0e0e0e;
+    }
+    .faqs .form input{
+        background-color: #171717;
+        color: #b7b7b7;
+    }
+
+    .form-data input, .form-data textarea{
+        background: #0c0b0b;
+        color: #b7b7b7;
+        border: 2px solid rgba(255, 255, 255, 0.2);
+    }
+    .form-data input:focus, .form-data textarea:focus{
+        border: 2px solid #990033;
+    }
+    .map iframe{
+        filter: grayscale(100%);
+    }
+}
+
+/* // Dark theme Toggle & Style */
