@@ -189,3 +189,34 @@ function removeHighlights(node) {
 
 //** Search functionality for the nav search box */
 
+
+
+
+
+//** Dark theme toggle
+
+const toggleIcon = document.querySelector(".dark-mode-toggle i");
+const currentTheme = localStorage.getItem('theme');
+
+if (currentTheme === 'dark') {
+    document.body.classList.add('dark-mode');
+    toggleIcon.classList.remove('fa-moon');
+    toggleIcon.classList.add('fa-sun'); // Change to sun icon
+}
+
+toggleIcon.addEventListener("click", () => {
+    document.body.classList.toggle('dark-mode');
+
+    let theme = 'light';
+    if (document.body.classList.contains('dark-mode')) {
+        theme = 'dark';
+        toggleIcon.classList.remove('fa-moon');
+        toggleIcon.classList.add('fa-sun'); // Change to sun icon
+    } else {
+        toggleIcon.classList.remove('fa-sun');
+        toggleIcon.classList.add('fa-moon');
+    }
+    localStorage.setItem('theme', theme);
+});
+
+//** Dark theme toggle */
