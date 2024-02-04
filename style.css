@@ -632,6 +632,9 @@ a.read:hover{
         background-color: #FFC2B4;
         cursor: pointer;
     }
+    .mobile-nav-toggle:focus{
+        border: 2px solid black;
+    }
     .mobile-nav-toggle[aria-expanded="true"]{
         background-image: url(assets/shared/xmark-solid.svg);
     }
@@ -1294,6 +1297,10 @@ body.dark-mode{
 
     a{
         color: #fdfffc;
+    }
+
+    .primary-navigation{
+        background-color: #171717;
     }
 
     .banner-style{
