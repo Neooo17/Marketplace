@@ -1299,10 +1299,6 @@ body.dark-mode{
         color: #fdfffc;
     }
 
-    .primary-navigation{
-        background-color: #171717;
-    }
-
     .banner-style{
         background: #171717;
         box-shadow: 0 1rem 3rem rgb(0 0 0 / 12%);
@@ -1364,6 +1360,12 @@ body.dark-mode{
 
     .active {
         color: #B3375B;
+    }
+
+    @media (max-width:980px){
+        .primary-navigation{
+            background-color: #171717;
+        }
     }
 }
 
