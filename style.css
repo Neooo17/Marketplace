@@ -1370,3 +1370,18 @@ body.dark-mode{
 }
 
 /* // Dark theme Toggle & Style */
+
+
+
+/* scrollbar */
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #8e8e8e;
+    border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #878787;
+}
