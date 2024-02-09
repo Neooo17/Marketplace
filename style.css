@@ -1008,6 +1008,21 @@ a.read:hover{
     z-index: 1;
     overflow: hidden;
 }
+.team-info::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 0;
+    background: rgb(0 0 0 / 58%);
+    border-radius: 20px;
+    transition: background 1s ease;
+}
+.team-info:hover::before {
+    background: transparent;
+}
 .socials {
     position: absolute;
     bottom: -80px;
