@@ -31,7 +31,7 @@ links.forEach((link) => {
 
 window.addEventListener('scroll', function() {
     var navbar = document.querySelector('nav');
-    var scrollTrigger = 100; // The scroll distance in pixels
+    var scrollTrigger = 90; // The scroll distance in pixels
 
     if (window.scrollY > scrollTrigger) {
         navbar.classList.add('scrolled');
