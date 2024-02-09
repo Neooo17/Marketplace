@@ -7,7 +7,7 @@ headers.forEach(heading => {
         const icon = heading.querySelector('i'); // Get the <i> tag inside the header
 
         // Toggle the display of the specific p element
-        if (content.style.display === "none") {
+        if (window.getComputedStyle(content).display === "none") {
             content.style.display = "block";
             icon.classList.remove('fa-chevron-down');
             icon.classList.add('fa-chevron-up');
