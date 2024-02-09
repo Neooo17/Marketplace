@@ -1200,7 +1200,6 @@ a.read:hover{
     transition: max-height 0.5s ease-out; */
 }
 /* .faq-page p.active {
-    
     max-height: 200px;
 } */
 .faq-page{
@@ -1209,6 +1208,12 @@ a.read:hover{
 .faq-page:last-child{
     border-bottom: none;
 }
+/* .faq-page h2:hover + p {
+    display: block;
+}
+.faq-page h2:hover i {
+    transform: rotate(180deg); 
+}  */
 
 .faqs .form{
     background: #FFC2B4;
