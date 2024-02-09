@@ -777,12 +777,13 @@ a.read:hover{
 /* Contact Page Style */
 
 .banner2{
-    padding: 15rem 4rem 6.2rem 4rem;
+    padding: 18rem 4rem 4rem 4rem;
     background: url(assets/images/banner.png) no-repeat center;
     background-size: cover;
     width: 100%;
 }
 .banner2 h4{
+    margin-top: -7rem;
     font-size: 1.8rem;
     line-height: 1.8rem;
     margin-bottom: 0.7rem;
@@ -944,7 +945,7 @@ a.read:hover{
 /* Team */
 
 .roww{
-    margin-top: 7rem;
+    margin-top: 6rem;
     display: flex;
     flex-direction: column;
     gap: 3rem;
@@ -1025,7 +1026,7 @@ a.read:hover{
 
 .review{
     width: 100%;
-    padding:4rem 6rem;
+    padding:2rem 6rem 4rem 6rem;
     background: url(assets/images/layer2.png) no-repeat center;
     background-size: cover;
 }
@@ -1124,6 +1125,10 @@ a.read:hover{
 
 /* Services Page Style */
 
+.services-s{
+    padding-top: 7rem;
+    padding-bottom: 2rem;
+}
 .stats-s{
     margin-top: 7rem;
     width: 100%;
