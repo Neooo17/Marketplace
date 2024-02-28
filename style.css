@@ -1356,6 +1356,12 @@ body.dark-mode{
     .team-img h6{
         color: #b7b7b7;
     }
+    .team-info::before{
+        background:rgb(0 0 0 / 38%); 
+    }
+    .team-info:hover::before{
+        background: transparent;
+    }
     .review-slide p, .review-slide h6{
         color: #fdfffc;
     }
