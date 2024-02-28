@@ -1019,6 +1019,7 @@ a.read:hover{
     background: rgb(0 0 0 / 58%);
     border-radius: 20px;
     transition: background 1s ease;
+    height: 99%;
 }
 .team-info:hover::before {
     background: transparent;
